@@ -12,8 +12,16 @@ $font: 16px;
 $padding: 80px 0;
 $fontFamily: 'Montserrat', sans-serif;
 $transition: .3s ease;
-
-
+/******************************
+mixins
+******************************/
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
 /******************************
 basic styles
 ******************************/
@@ -27,4 +35,53 @@ body {
     color: $fontColor;
     font-family: $fontFamily;
     line-height: 1.5;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $bela;
+    &:hover {
+        color: $pink;
+        transition: $transition;
+    }
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    span {
+        color: $pink;
+    }
+}
+/******************************
+nav
+******************************/
+nav {
+    background: $navPlava;
+    @include flex(space-between, center, row);
+    padding: 30px 60px;
+    ul {
+        @include flex(space-between, center, row);
+        li {
+            margin-left: 50px;
+        }
+    }
+}
+/******************************
+footer
+******************************/
+footer {
+    background: $navPlava;
+    text-align: center;
+    padding: $padding;
+    p {
+        color: $bela;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    a {
+        margin: 0 20px;
+        font-size: 1.2rem;
+    }
 }

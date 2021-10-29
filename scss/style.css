@@ -2,6 +2,9 @@
 variables
 ******************************/
 /******************************
+mixins
+******************************/
+/******************************
 basic styles
 ******************************/
 * {
@@ -16,5 +19,94 @@ body {
   color: #0b193c;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #f91257;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.logo span {
+  color: #f91257;
+}
+
+/******************************
+nav
+******************************/
+nav {
+  background: #09192c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px 60px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+/******************************
+footer
+******************************/
+footer {
+  background: #09192c;
+  text-align: center;
+  padding: 80px 0;
+}
+
+footer p {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer a {
+  margin: 0 20px;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
