@@ -134,6 +134,29 @@ unlimited
     }
 }
 /******************************
+howItWorks
+******************************/
+.howItWorks {
+    background: $tamnoPlava;
+    color: $bela;
+    padding: $padding;
+    .container {
+        @include flex(space-between, center, row);
+        div {
+            flex: 0 0 30%;
+            i {
+                color: $pink;
+                font-size: 4rem;
+                margin: 20px 0;
+            }
+            h3  {
+                font-size: 1.7rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+/******************************
 footer
 ******************************/
 footer {
