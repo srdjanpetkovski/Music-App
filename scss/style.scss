@@ -52,6 +52,10 @@ body {
     font-family: $fontFamily;
     line-height: 1.5;
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
 ul {
     list-style: none;
 }
@@ -69,6 +73,10 @@ a {
     span {
         color: $pink;
     }
+}
+h2 {
+    font-size: 3rem;
+    line-height: 1.1;
 }
 /******************************
 nav
@@ -110,6 +118,19 @@ header
     }
     button {
         @include btn;
+    }
+}
+/******************************
+unlimited
+******************************/
+.unlimited {
+    padding: $padding;
+    @include flex(space-between, center, row);
+    article {
+        flex: 0 0 50%;
+        button {
+            @include btn;
+        }
     }
 }
 /******************************

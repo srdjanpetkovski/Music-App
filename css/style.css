@@ -21,6 +21,11 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 ul {
   list-style: none;
 }
@@ -43,6 +48,11 @@ a:hover {
 
 .logo span {
   color: #f91257;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.1;
 }
 
 /******************************
@@ -151,6 +161,53 @@ header
 }
 
 .mainHeader button:hover {
+  background: #383c6e;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+/******************************
+unlimited
+******************************/
+.unlimited {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.unlimited article {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.unlimited article button {
+  color: white;
+  background: #f91257;
+  text-transform: uppercase;
+  border-radius: 40px;
+  padding: 20px 40px;
+  border: none;
+  margin-top: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.unlimited article button:hover {
   background: #383c6e;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
