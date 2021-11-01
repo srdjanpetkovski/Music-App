@@ -260,11 +260,11 @@ howItWorks
 /******************************
 artists
 ******************************/
-.artists, .subscription {
+.artists, .concept {
   padding: 80px 0;
 }
 
-.artists article, .subscription article {
+.artists article, .concept article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,38 +282,38 @@ artists
           flex-direction: row;
 }
 
-.artists article h2, .subscription article h2 {
+.artists article h2, .concept article h2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
 }
 
-.artists article p, .subscription article p {
+.artists article p, .concept article p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
 }
 
-.artists article img, .subscription article img {
-  width: 100%;
-  border-radius: 40px;
-}
-
-.artists article div, .subscription article div {
+.artists article div, .concept article div {
   text-align: center;
   margin-top: 40px;
 }
 
+.artists article div img, .concept article div img {
+  width: 100%;
+  border-radius: 40px;
+}
+
 /******************************
-subscription
+concept
 ******************************/
-.subscription div {
+.concept article div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 15%;
           flex: 0 0 15%;
 }
 
-.subscription div img {
+.concept article div img {
   border-radius: 50%;
 }
 

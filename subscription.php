@@ -1,7 +1,7 @@
 <?php include "partials/header.php"; ?>
 
 <!-- subscription -->
-        <section class="container subscription">
+        <section class="container concept">
                 <article>
                         <h2>Our concept & artists</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quasi reiciendis aspernatur nihil, ipsum et quas doloremque impedit, ipsam placeat hic earum illum enim deserunt. Veniam aliquam sequi necessitatibus natus dolores, expedita eos, adipisci doloribus, sed ipsum quod soluta nam?</p>
