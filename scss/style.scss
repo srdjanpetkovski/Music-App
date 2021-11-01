@@ -157,6 +157,29 @@ howItWorks
     }
 }
 /******************************
+artists
+******************************/
+.artists {
+    padding: $padding;
+    article {
+        @include flex(space-between, center, row);
+        h2 {
+            flex: 0 0 48%;
+        }
+        p {
+            flex: 0 0 48%;
+        }
+        img {
+            width: 100%;
+            border-radius: 40px;
+        }
+        div {
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+}
+/******************************
 footer
 ******************************/
 footer {
