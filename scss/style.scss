@@ -85,14 +85,28 @@ nav {
     background: $navPlava;
     @include flex(space-between, center, row);
     padding: 30px 60px;
+    @media (max-width:767px) {
+        padding: 30px 0;
+    }
     ul {
         @include flex(space-between, center, row);
+        @media (max-width:767px) {
+            @include flex(space-between, center, row);
+            margin-top: 15px;
+        }
         li {
             margin-left: 50px;
+            @media (max-width:767px) {
+                margin-left: 41px;
+            }
         }
     }
     .logo {
         font-size: 1.7rem;
+        @media (max-width:767px) {
+            font-size: 1.7rem;
+            margin: auto;
+        }
     }
 }
 /******************************
@@ -103,9 +117,17 @@ header
     color: $bela;
     padding: 0 60px;
     @include flex(space-between, center, row);
+    @media (max-width:767px) {
+        padding: 0 10px;
+        text-align: center;
+    }
     div {
         flex: 0 0 48%;
         padding: 60px 0;
+        @media (max-width:767px) {
+            flex: 0 0 100%;
+            padding: 50px 0;
+        }
         img {
             width: 100%;
         }
@@ -115,6 +137,10 @@ header
     }
     h1 {
         font-size: 4rem;
+        @media (max-width:767px) {
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
     }
     button {
         @include btn;
@@ -128,8 +154,17 @@ unlimited
     @include flex(space-between, center, row);
     article {
         flex: 0 0 50%;
+        @media (max-width:767px) {
+            flex: 0 0 100%;
+        }
         button {
             @include btn;
+        }
+        h2 {
+            @media (max-width:767px) {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
         }
     }
 }
@@ -144,14 +179,25 @@ howItWorks
         @include flex(space-between, center, row);
         div {
             flex: 0 0 30%;
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+            }
             i {
                 color: $pink;
                 font-size: 4rem;
                 margin: 20px 0;
+                @media (max-width:767px) {
+                    font-size: 2rem;
+                    margin: 20px 0;
+                }
             }
             h3  {
                 font-size: 1.7rem;
                 margin-bottom: 10px;
+                @media (max-width:767px) {
+                    font-size: 1.1rem;
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -165,13 +211,23 @@ artists
         @include flex(space-between, center, row);
         h2 {
             flex: 0 0 48%;
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+            }
         }
         p {
             flex: 0 0 48%;
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+                padding: 10px 0;
+            }
         }
         div {
             text-align: center;
             margin-top: 40px;
+            @media (max-width:767px) {
+                width: 100%;
+            }
             img {
                 width: 100%;
                 border-radius: 40px;
@@ -190,6 +246,9 @@ subscription
         @include flex(space-between, center, row);
         div:first-child {
             flex: 0 0 48%;
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+            }
             h4 {
                 color: $pink;
                 padding: 15px 0;
@@ -205,6 +264,10 @@ subscription
             border-radius: 20px;
             padding: 30px;
             @include flex(center, center, row);
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+                margin-top: 30px;
+            }
             ul {
                 line-height: 3;
                 li::before {
@@ -225,8 +288,14 @@ concept
     article {
         div {
             flex: 0 0 15%;
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+            }
             img {
                 border-radius: 50%;
+                @media (max-width:767px) {
+                    width: 80%;
+                }
             }
         }
     }
@@ -246,59 +315,5 @@ footer {
     a {
         margin: 0 20px;
         font-size: 1.2rem;
-    }
-}
-/******************************
-responsive
-******************************/
-@media (max-width:768px) {
-    nav {
-        padding: 30px 0;
-        ul {
-            @include flex(space-between, center, row);
-            margin-top: 15px;
-            li {
-                margin-left: 40px;
-            }
-        }
-        .logo {
-            font-size: 1.7rem;
-            margin: auto;
-        }
-    }
-    .mainHeader {
-        padding: 0 50px;
-        div {
-            flex: 0 0 100%;
-            padding: 50px 0;
-        }
-        h1 {
-            font-size: 1.9rem;
-            margin-bottom: 10px;
-        }
-    }
-    .unlimited {
-        article {
-            flex: 0 0 100%;
-            h2 {
-                font-size: 2rem;
-                margin-bottom: 15px;
-            }
-        }
-    }
-    .howItWorks {
-        .container {
-            div {
-                flex: 0 0 100%;
-                i {
-                    font-size: 2rem;
-                    margin: 20px 0;
-                }
-                h3  {
-                    font-size: 1.1rem;
-                    margin-bottom: 10px;
-                }
-            }
-        }
     }
 }
