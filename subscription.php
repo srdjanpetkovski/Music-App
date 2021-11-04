@@ -1,6 +1,26 @@
 <?php include "partials/header.php"; ?>
 
 <!-- subscription -->
+        <section class="subscription">
+                <article class="container">
+                        <div>
+                                <h2>Subscription from $15/month</h2>
+                                <h4>Start a free trial now</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores quae fugiat quo rerum? Quia saepe eos animi? Quasi quo deserunt numquam itaque adipisci blanditiis commodi odit architecto. Expedita, nisi?</p>
+                        </div>
+                        <div>
+                                <ul>
+                                        <li>Play any tracks</li>
+                                        <li>Listen offLine</li>
+                                        <li>No add interruptions</li>
+                                        <li>Unlimited skips</li>
+                                        <li>High quality</li>
+                                        <li>Shuffle play</li>
+                                </ul>
+                        </div>
+                </article>
+        </section>
+<!-- concept -->
         <section class="container concept">
                 <article>
                         <h2>Our concept & artists</h2>
